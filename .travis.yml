@@ -12,6 +12,9 @@ install:
   - npm install
   - node_modules/.bin/bower install
 
+before_script:
+  - npm install -g npm@'>=3'
+
 script:
   # Just run the default task and make sure it builds, there aren't any tests :(
   - node_modules/.bin/grunt
